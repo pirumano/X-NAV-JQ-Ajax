@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$("#boton").click(function(){
+		$.ajax({
+			url:"texto.txt",
+		})
+		.done(function(data){
+			$("#res").append(data);
+		});
+	});
+});
